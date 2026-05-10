@@ -11,7 +11,7 @@ test("Locators Test Scenarios", async ({ page }) => {
   console.log(buttonTitles);
 });
 
-test.only("@Web Client App login", async ({ page }) => {
+test("@Web Client App login", async ({ page }) => {
   //js file- Login js, DashboardPage
   const email = "anshika@gmail.com";
   const productName = "zara coat 3";
