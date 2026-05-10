@@ -22,6 +22,8 @@ test("My First Playwright Test", async ({ browser }) => {
   await expect(page).toHaveTitle(
     "Pankaj Kulsange - QA Automation Engineer | Automation Testing Expert",
   );
+  // playwright locator css, xpath
+  await page.getByRole("button", { name: "Hire Me" });
 });
 // if you don't want to inject any cookies/ plugins/ proxies the you can use page global fixer directly
 test("My Second Playwright Test", async ({ page }) => {
