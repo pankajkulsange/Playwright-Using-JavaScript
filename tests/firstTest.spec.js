@@ -23,7 +23,7 @@ test("My First Playwright Test", async ({ browser }) => {
     "Pankaj Kulsange - QA Automation Engineer | Automation Testing Expert",
   );
   // playwright locator css, xpath
-  await page.getByRole("button", { name: "Hire Me" });
+  await page.getByRole("button", { name: "Hire Me" }).first().click();
 });
 // if you don't want to inject any cookies/ plugins/ proxies the you can use page global fixer directly
 test("My Second Playwright Test", async ({ page }) => {
