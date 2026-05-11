@@ -11,9 +11,9 @@ test.only("UI Controls Test Case", async ({ page }) => {
   await dropDown.selectOption("consult");
   //handling radio button
   await page.locator(".radiotextsty").last().click();
-  await page.locator("#okaybtn").click();
+  await page.locator("#okayBtn").click();
   console.log(await page.locator(".radiotextsty").last().isChecked());
-  await expect(page.locator(".radiotextsty").last()).isChecked();
+  await expect(page.locator(".radiotextsty").last()).toBeChecked();
   await page.locator("#terms").click();
   await expect(page.locator("#terms")).toBeChecked();
   await page.locator("#terms").uncheck();
